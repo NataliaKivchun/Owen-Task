@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owen</title>
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/app.css" />
+    <link rel="stylesheet" href="./src/styles/shared/container.css" />
+    <link rel="stylesheet" href="./src/styles/components/language-choice.css" />
+    <link rel="stylesheet" href="./src/styles/components/page.css" />
+    <link rel="stylesheet" href="./src/styles/components/form.css" />
+  </head>
+  <body>
+    <header>
+      <div class="language-choice">
+        <label class="language-choice__label"
+          ><input
+            type="radio"
+            id="languageRu"
+            class="language-choice__input"
+            name="language"
+            value="ru"
+            checked
+          />
+          <span class="language-choice__img"></span>
+          <p class="language-choice__text">RU</p>
+        </label>
+        <label class="language-choice__label"
+          ><input
+            type="radio"
+            id="languageEn"
+            class="language-choice__input"
+            name="language"
+            value="en"
+          />
+          <span class="language-choice__img"></span>
+          <p class="language-choice__text">EN</p>
+        </label>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="page">
+          <div class="page__content">
+            <a class="logo-link" href="#"
+              ><img
+                class="logo-img"
+                src="./src/assets/icons/logo_oven_2022 2.svg"
+                alt="Logo"
+            /></a>
+            <h1 class="page__title">Вход в систему</h1>
+            <form class="form" action="">
+              <div class="form__input-fields">
+                <label class="form__input-label" for="login-input"
+                  ><p class="form__input-label-text">Логин</p>
+                  <input
+                    id="login-input"
+                    class="form__input"
+                    type="text"
+                    placeholder=""
+                    value="Nickname"
+                    required
+                  />
+                </label>
+
+                <label class="form__input-label" for="password-input"
+                  ><p class="form__input-label-text">Пароль</p>
+                  <input
+                    id="password-input"
+                    class="form__input"
+                    type="password"
+                    placeholder=""
+                    value="some13symbols"
+                    required
+                  />
+                  <span class="form__show-password">Показать</span>
+                </label>
+              </div>
+
+              <label class="form__checkbox-label" for="stay-checkbox"
+                ><input
+                  id="stay-checkbox"
+                  class="form__checkbox"
+                  type="checkbox"
+                  checked
+                />
+                <span class="form__custom-checkbox"></span>
+                <p class="form__checkbox-label-text">Оставаться в системе</p>
+              </label>
+              <button class="form__btn" type="submit">Войти</button>
+            </form>
+          </div>
+        </div>
+        <div class="page">
+          <div class="page__content">
+            <a class="logo-link" href="#"
+              ><img
+                class="logo-img"
+                src="./src/assets/icons/logo_oven_2022 2.svg"
+                alt="Logo"
+            /></a>
+            <h1 class="page__title">Вход в систему</h1>
+            <form class="form" action="">
+              <div class="form__input-fields">
+                <span class="form__error-message">Введите логин и пароль</span>
+                <label class="form__input-label" for="login-input"
+                  ><p class="form__input-label-text">Логин</p>
+                  <input
+                    id="login-input"
+                    class="form__input form__input--error"
+                    type="text"
+                    placeholder=""
+                    required
+                  />
+                </label>
+
+                <label class="form__input-label" for="password-input"
+                  ><p class="form__input-label-text">Пароль</p>
+                  <input
+                    id="password-input"
+                    class="form__input form__input--error"
+                    type="password"
+                    placeholder=""
+                    required
+                  />
+                  <span class="form__show-password">Показать</span>
+                </label>
+              </div>
+
+              <button class="form__btn" type="submit">Войти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

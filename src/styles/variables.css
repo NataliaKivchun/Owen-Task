@@ -1,0 +1,13 @@
+:root {
+  --typography-dark-primary: #152d2d;
+  --ui-elements-green-default: #008f86;
+  --ui-elements-green-hover: #007a73;
+  --ui-elements-gray-56: #7c8989;
+  --ui-elements-gray-24: #c7cdcd;
+  --ui-elements-white: #fff;
+  --ui-elements-gray-06: #f1f2f2;
+  --ui-elements-red-alert: #d71920;
+  --ui-elements-dark: #152d2d;
+  --bg-white-primaty: #fff;
+  --bg-red-alert: #d7192014;
+}

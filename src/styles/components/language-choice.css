@@ -1,0 +1,54 @@
+.language-choice {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  top: 16px;
+  right: 24px;
+  gap: 4px;
+  letter-spacing: -0.24px;
+}
+
+.language-choice__label {
+  position: relative;
+  display: flex;
+  padding: 3px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding-left: 28px;
+  color: var(--ui-elements-gray-56);
+  border: 1px solid transparent;
+}
+
+.language-choice__label:has(.language-choice__input:checked) {
+  border: 1px solid var(--ui-elements-green-default);
+  color: var(--ui-elements-dark);
+}
+
+.language-choice__input {
+  appearance: none;
+}
+
+.language-choice__img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 8px;
+  cursor: pointer;
+}
+
+.language-choice__label:nth-child(1) .language-choice__img {
+  background-image: url(../../assets/icons/Russia.svg);
+}
+
+.language-choice__label:nth-child(2) .language-choice__img {
+  background-image: url(../../assets/icons/UnitedKingdom.svg);
+}
+
+.language-choice__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  text-transform: uppercase;
+}
